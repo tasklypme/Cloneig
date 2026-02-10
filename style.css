@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif ;
+    
+}
+body {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 550px;
+    width: 50%;
+  
+}
+.images {
+    height: 100%;
+    width: 50%;
+    background: url(img1.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 25px;
+    position: relative;
+    
+    
+}
+.images img {
+    position: absolute;
+    height: 470px;
+    width: 222px;
+    top: 20px;
+    right: 22px;
+}
+.content {
+    height: 100%;
+    width: 45%;
+}
+form {
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+form img {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+input {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px
+    width: 85%;
+    outline: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    font-size: 11px;
+}
+::placeholder {
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    font-size: 11px;
+    color: #BEBEBE;
+}
+
+input:focus::placeholder {
+    font-size: 8px;
+    top: 3px;
+    
+}
+button {
+    width: 85%;
+    padding: 5px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #0095Fa;
+    border: 1px solid #0095Fa;
+    border-radius: 4px;
+}
+form span {
+  margin: 20px 0;
+  color: #BEBEBE;
+  font-size: 12px;
+  position: relative;
+}
+span::after {
+  position: absolute;
+  right: -110px;
+  top: 6px;
+  content:"";
+  width: 100px;
+  height: 1px;
+  background-color: #dbdbdb;
+  
+}
+span::before {
+  position: absolute;
+  left: -110px;
+  top: 6px;
+  content:"";
+  width: 100px;
+  height: 1px;
+  background-color: #dbdbdb;
+  
+}
+.other-content {
+  text-align: center;
+}
+h4 {
+  font-size: 13px;
+  color: #385185;
+  margin-bottom: 20px;
+}
+.other-content p {
+  font-size:12px;
+  
+}
+.sign-in-box {
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 11px;
+  background-color: #fff;
+}
+a {
+  color: #0095F6;
+  text-decoration: 0;
+  font-weight: 400;
+  
+  
+}
+.download_text {
+  text-align: center;
+  font-size: 13px;
+}
+.link {
+  text-align: center;
+  
+}
+.links img {
+  width: 130px;
+}
+.links img:last-child {
+  margin-left: 5px;
+}
+
+@keyframes (max-width:115px) {
+  .images {
+    display: none;
+    
+  }
+  .content {
+    width: 100%;
+    
+  }
+}
+@media (max-width:624px) {
+  section {
+    width: 100%;
+    padding: 20px;
+    
+  }
+}

@@ -159,7 +159,7 @@ a {
   margin-left: 5px;
 }
 
-@keyframes (max-width:115px) {
+@media (max-width:1159px) {
   .images {
     display: none;
     
@@ -167,6 +167,9 @@ a {
   .content {
     width: 100%;
     
+  }
+  .content {
+    width: 100%;
   }
 }
 @media (max-width:624px) {
